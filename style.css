@@ -100,7 +100,7 @@ header {
   height: 88vh;
   border-radius: 10px;
   margin-bottom: 50px;
-
+ background-position: right right;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -119,6 +119,7 @@ header {
 .section-header .header-left h1 {
   font-size: 70px;
   font-family: "oswald";
+  line-height: 9rem;
   text-transform: uppercase;
   text-shadow: 3px 3px 3px black;
   backdrop-filter: blur(1px);
@@ -142,6 +143,7 @@ header {
   }
   .section-header .header-left h1{
     font-size: 100px;
+    line-height: 13rem;
     text-align: center;
   }
   .section-header .header-left p{
@@ -151,6 +153,9 @@ header {
   }
   .section-about p{
     max-width: 35%;
+  }
+  .slider{
+    max-width: 30%;
   }
 }
 /* .section-header .header-right {
