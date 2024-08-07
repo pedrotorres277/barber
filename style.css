@@ -101,7 +101,6 @@ header {
   border-radius: 10px;
   margin-bottom: 50px;
 
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -115,7 +114,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 10px;
 }
 .section-header .header-left h1 {
   font-size: 70px;
@@ -126,20 +125,41 @@ header {
   -webkit-backdrop-filter: blur(25px);
 }
 .section-header .header-left p {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "rubik";
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(25px);
   text-indent: 1.5rem;
-  text-align: justify;
+  line-height: 1.7rem;
+  text-align: center;
 }
-.section-header .header-right {
+@media screen and (min-width: 769px) {
+  .section-header{
+    width: 70%;
+    margin-left: 15%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-header .header-left h1{
+    font-size: 100px;
+    text-align: center;
+  }
+  .section-header .header-left p{
+    max-width: 250px;
+    font-size: 16px;
+    margin-left: 10%;
+  }
+  .section-about p{
+    max-width: 35%;
+  }
+}
+/* .section-header .header-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
-}
+} */
 .button-icon {
   text-transform: uppercase;
   cursor: pointer;
@@ -157,7 +177,7 @@ header {
   box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   position: relative;
-  margin: 70px 0px 85px 50px;
+  margin-top: 25px;
 }
 
 .button-icon:hover {
@@ -191,11 +211,13 @@ header {
   font-family: "rubik", "sans serif";
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slider {
-  margin: 25px auto;
-  width: 100%;
-  height: 520px;
+  margin: 0 auto;
+  width: 75%;
+  height: 80%;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.616);
@@ -218,7 +240,7 @@ header {
 }
 .manual-navigation {
   position: absolute;
-  width: 800px;
+  width: 75%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -257,8 +279,8 @@ header {
 }
 .navigation-auto {
   position: absolute;
-  width: 800px;
-  margin-top: 460px;
+  width: 75%;
+  margin-top: 94%;
   display: flex;
   justify-content: center;
 }
@@ -280,7 +302,7 @@ header {
 /* ---------------- */
 .section-about {
   width: 100%;
-  height: 88vh;
+  height: 95vh;
   border-radius: 10px;
   background-image: linear-gradient(#058ba3, #056779, #04505e);
   padding: 30px;
@@ -298,6 +320,22 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.section-about h1{
+  font-size: 60px;
+  color: rgb(255, 244, 244);
+  text-align: center;
+  font-family: 'oswald', 'sans-serif';
+  line-height: 7rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 3px black;
+}
+.section-about p{
+  font-size: 16px;
+  text-align: center;
+  font-family: 'rubik';
+  
 }
 .section-about button {
   margin: 20px;
